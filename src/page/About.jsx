@@ -30,20 +30,18 @@ const [isCopied, setIsCopied] = useState(false);
           {/* CARD 1: Large Intro Box (Spans 2 rows vertically) */}
           <motion.div whileHover={{ scale: 1.02 }} className="md:row-span-2  bg-[#1e2245] border border-gray-800 rounded-3xl p-6 flex flex-col justify-between overflow-hidden relative group">
             {/* Top Graphic Placeholder / Image */}
-            <div className="[perspective:1000px] w-140  absolute pl-23 md:pt-10 flex justify-center items-center ">
-              {/* 2. Apply 3D rotation, scaling, and shadow to the image container */}
-              <div className="[transform:rotateX(45deg)_rotateY(-1deg)_rotateZ(45deg)] shadow-2xl shadow-black rounded-2xl overflow-hidden border border-slate-700/50 max-w-md ">
-                {/* Your normal image */}
+            <div className="[perspective:1000px] flex justify-center items-center pt-2">
+              <div className="[transform:rotateX(45deg)_rotateY(-1deg)_rotateZ(45deg)] shadow-2xl shadow-black rounded-2xl overflow-hidden border border-slate-700/50">
                 <img
                   src="/coding.png"
                   alt="Code Screenshot"
-                  className="w-120 md:w-125 md:h-95 h-95 object-cover"
+                  className="w-full h-48 md:h-56 object-cover"
                 />
               </div>
             </div>
 
             {/* Bottom Content */}
-            <div className="z-10 mt-2 md:mt-4 md:pt-90">
+            <div className="z-10 mt-2 md:mt-4">
               <h2 className=" text-sm md:text-xl font-bold mb-2">Hi, I'm Pak Menghieng</h2>
               <p className="text-gray-400 text-sm">
                 Over the last 4 years, I developed my frontend and backend dev skills to deliver dynamic and responsive software and web applications.
