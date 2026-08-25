@@ -12,7 +12,7 @@ gsap.registerPlugin(SplitText)
 function Home() {
 
     const handleDownloadResume = () => {
-        const pdfUrl = "../../public/resume/Pak_Menghieng_Resume.pdf"
+        const pdfUrl = "/resume/Pak_Menghieng_Resume.pdf"
 
         const link = document.createElement("a")
         link.href = pdfUrl
