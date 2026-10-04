@@ -78,11 +78,8 @@ function Home() {
     return (
         <div id="home" className='grid grid-cols-1 gap-1 md:grid-cols-2'>
             <div className='p-5 md:p-27 '>
-                <TypingAnimation className='text-3xl md:text-4xl'>{"Hi all👋 i’m Pak Menghieng"}</TypingAnimation>
-                <p ref={paraRef} className='pt-2 md:text-xl md:pt-3'>Full-Stack Web Developer & CS Student at AEU. <br />
-                Silver Medalist at the World Vocational College Skills Competition (SEA). Specializedin React, <br />
-                Next.js,  Node.js, C#, and PostgreSQL to create fast, <br />
-                scalable, and modern web applications.</p>
+                <TypingAnimation className='text-3xl md:text-4xl'>{"Hi all i’m Pak Menghieng"}</TypingAnimation>
+                <p ref={paraRef} className='pt-2 md:text-xl md:pt-3'>I'm a Computer Science student at AEU and a Silver Medalist at the World Vocational College Skills Competition (SEA). As a Full-Stack Developer, I specialize in React, Next.js, Node.js, and PostgreSQL to design and ship high-performance, scalable web applications.</p>
 
                 <div className='flex gap-4 pt-1'>
                     <a href="https://t.me/Pak_Menghieng" aria-label="telegram"><img className='w-10 h-10 mt-5' src="/Telegram_logo.svg.webp" alt="telegram" /></a>

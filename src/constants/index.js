@@ -1,4 +1,6 @@
 import reactLogo from "../assets/logo/react.png";
+import mongodbLogo from "../assets/logo/mongodb-removebg-preview.png";
+import nodeLogo from "../assets/logo/node-removebg-preview.png";
 import tailwindLogo from "../assets/logo/tailwind-css-logo-png_seeklogo-354675-removebg-preview.png";
 import postgresqlLogo from "../assets/logo/postgresql-removebg-preview.png";
 import renderLogo from "../assets/logo/render-removebg-preview.png";
@@ -71,24 +73,58 @@ export const certificates = [
 ];
 
 export const myProject = [
-  {
+    {
     id: 1,
-    title: "Sbay Sdab — YouTube Media Streaming Platform",
+    title: "E-shop — E-Commerce Platform",
     description:
-      "Designed and deployed a dark-themed media web application allowing users to stream and download YouTube videos and audio via URL processing Built a personal media library system featuring user authentication, custom playlists, favorites, streaming history, and dynamic user dropdown menus backed by PostgreSQL Engineered a clean, responsive UI using Next.js and Tailwind CSS with custom glassmorphism visual aesthetics and fluid sidebar navigation",
-    subDescription: "Next.js, Tailwind CSS, PostgreSQL, Render, REST APIs",
-    href: "https://sbay-sdab-yp1k.onrender.com",
-    Image: "/project_image/next-sbay.png",
+      "The first image showcases an e-commerce retail homepage designed in Khmer, featuring a clean layout with promotional banners, search capabilities, and product highlight sections. It displays key platform metrics",
+    subDescription: "React.js, Tailwind CSS, mongoDB, Render, Node.js,REST APIs",
+    href: "https://e-shop-7g1h.onrender.com/",
+    Image: "/project_image/e-shop.png",
+    tags: [
+      { id: 1, name: "React.js", path: reactLogo },
+      { id: 2, name: "Tailwind CSS", path: tailwindLogo },
+      { id: 3, name: "mongoDB", path: mongodbLogo },
+      { id: 4, name: "Render", path: renderLogo },
+      { id: 5, name: "Node.js", path: nodeLogo },
+      { id: 6, name: "REST API", path: apiLogo },
+    ],
+  },
+      {
+    id: 2,
+    title: "E-Shop Management Dashboard",
+    description:
+      `The second image displays the backend administrative portal ("Generale Report") for the E-Shop platform, built to track daily operations and business metrics. It provides quick-statistic cards for revenue and pending invoices, entity counts for customers and suppliers, navigation modules for sales and inventory management, and graphical charts visualizing monthly financial totals.`,
+    subDescription: "React.js, Tailwind CSS, mongoDB, Render, Node.js, REST APIs",
+    href: "https://e-shop-dashboard.onrender.com",
+    Image: "/project_image/e-shopdashboard.png",
+    tags: [
+      { id: 1, name: "React.js", path: reactLogo },
+      { id: 2, name: "Tailwind CSS", path: tailwindLogo },
+      { id: 3, name: "mongoDB", path: mongodbLogo },
+      { id: 4, name: "Render", path: renderLogo },
+      { id: 5, name: "Node.js", path: nodeLogo },
+      { id: 6, name: "REST API", path: apiLogo },
+    ],
+  },
+        {
+    id: 3,
+    title: "E-Fashion — E-Commerce Platform",
+    description:
+      `The third image presents "E-Fashion," a modern apparel e-commerce website designed with an intuitive header navigation bar, search functionality, contact support, and shopping cart indicators. Its primary hero banner highlights current style trends with clear call-to-action buttons ("Shop the collection" and "View this week's deals") leading directly into curated product categories.`,
+    subDescription: "Rext.js, Tailwind CSS, mongoDB, Render, REST APIs",
+    href: "https://e-commerces-with-next-js.onrender.com/",
+    Image: "/project_image/e-fashion.png",
     tags: [
       { id: 1, name: "Next.js", path: nextLogo },
       { id: 2, name: "Tailwind CSS", path: tailwindLogo },
-      { id: 3, name: "PostgreSQL", path: postgresqlLogo },
+      { id: 3, name: "mongoDB", path: mongodbLogo },
       { id: 4, name: "Render", path: renderLogo },
-      { id: 5, name: "restApi", path: apiLogo },
+      { id: 5, name: "REST API", path: apiLogo },
     ],
   },
   {
-    id: 2,
+    id: 5,
     title: "Sbay — Social Platform",
     description:
       "Built a full-stack social networking application supporting user feeds, multimedia story updates, real-time post creation, and friend request management workflows. Structured relational database schemas in PostgreSQL to handle complex user relationships, post interactions, activity feeds, and user profile management. Developed an intuitive dashboard layout complete with dynamic sidebars, suggested user recommendations, and content discovery categories.",
@@ -100,11 +136,11 @@ export const myProject = [
       { id: 2, name: "Tailwind CSS", path: tailwindLogo },
       { id: 3, name: "PostgreSQL", path: postgresqlLogo },
       { id: 4, name: "Render", path: renderLogo },
-      { id: 5, name: "restApi", path: apiLogo },
+      { id: 5, name: "REST API", path: apiLogo },
     ],
   },
   {
-    id: 3,
+    id: 6,
     title: "Interactive E-Commerce Platform",
     description:
       "Built a single-page application (SPA) focused on a modern luxury aesthetic with smooth page transitions and scroll-triggered animations. Designed responsive product grids, brand logo marquees, and dynamic contact forms with real-time focus feedback.",
@@ -112,14 +148,14 @@ export const myProject = [
     href: "https://react-eccomers.vercel.app",
     Image: "/project_image/react.png",
     tags: [
-      { id: 1, name: "Next.js", path: reactLogo },
+      { id: 1, name: "React.js", path: reactLogo },
       { id: 2, name: "Tailwind CSS", path: tailwindLogo },
       { id: 3, name: "Framer Motion", path: frameLogo },
       { id: 4, name: "GSAP", path: gsapLogo },
     ],
   },
   {
-    id: 4,
+    id: 7,
     title: "Interactive E-Commerce Platform",
     description:
       "Developed a lightweight multi-page web application ground-up without external JavaScript frameworks to ensure a minimal footprint and optimal rendering performance. Structured responsive page layouts covering Home, Product Catalog, About Us, and Contact Us forms.",

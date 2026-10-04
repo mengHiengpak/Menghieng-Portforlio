@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AdminLayout />}>
           <Route index element={
-            <Suspense fallback={<div className="text-center p-10">Loading...</div>}>
+            <Suspense fallback={<div className="text-center p-10 ">Loading...</div>}>
               <Home />
               <About />
               <Projects />
@@ -29,7 +29,7 @@ function App() {
           <Route path="/projects" element={<Suspense fallback={<div className="text-center p-10">Loading...</div>}><Projects /></Suspense>} />
           <Route path="/education" element={<Suspense fallback={<div className="text-center p-10">Loading...</div>}><Education /></Suspense>} /> 
           <Route path="/certificate" element={<Suspense fallback={<div className="text-center p-10">Loading...</div>}><Certificate /></Suspense>} /> 
-          <Route path="/contact" element={<Suspense fallback={<div className="text-center p-10">Loading...</div>}><Contact /></Suspense>} />
+          <Route path="/contact" element={<Suspense fallback={<div className="min-h-screen text-center p-10">Loading...</div>}><Contact /></Suspense>} />
           <Route path="/login" element={<div className="min-h-screen flex items-center justify-center bg-[#0b0d17]"><LoginForm /></div>} />
         </Route>
       </Routes>

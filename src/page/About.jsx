@@ -23,7 +23,7 @@ const [isCopied, setIsCopied] = useState(false);
 
   return (
     <>
-      <section id="aboutme" className="scroll-mt-24">
+      <section  id="aboutme" className="scroll-mt-24">
         <h2 className="text-4xl md:pl-27 pl-7 pb-5">About Me </h2>
         <div className=" min-h-screen text-white pt-2 md:pt-2 pl-6 pr-6 md:pl-12 md:pr-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px] ">
@@ -31,7 +31,7 @@ const [isCopied, setIsCopied] = useState(false);
           <motion.div whileHover={{ scale: 1.02 }} className="md:row-span-2  bg-[#1e2245] border border-gray-800 rounded-3xl p-6 flex flex-col justify-between overflow-hidden relative group">
             {/* Top Graphic Placeholder / Image */}
             <div className="[perspective:1000px] flex justify-center items-center pt-2">
-              <div className="[transform:rotateX(45deg)_rotateY(-1deg)_rotateZ(45deg)] shadow-2xl shadow-black rounded-2xl overflow-hidden border border-slate-700/50">
+              <div className="absolute md:top-10 top-0.5 [transform:rotateX(45deg)_rotateY(-5deg)_rotateZ(40deg)] shadow-2xl shadow-black rounded-2xl overflow-hidden border border-slate-700/50">
                 <img
                   src="/coding.png"
                   alt="Code Screenshot"
@@ -41,10 +41,10 @@ const [isCopied, setIsCopied] = useState(false);
             </div>
 
             {/* Bottom Content */}
-            <div className="z-10 mt-2 md:mt-4">
+            <div className="absolute z-999 bottom-5 md:bottom-20">
               <h2 className=" text-sm md:text-xl font-bold mb-2">Hi, I'm Pak Menghieng</h2>
               <p className="text-gray-400 text-sm">
-                Over the last 4 years, I developed my frontend and backend dev skills to deliver dynamic and responsive software and web applications.
+               Currently in my third year of university, I am a passionate full-stack developer focused on building dynamic and responsive web applications. I bridge clean, intuitive frontend interfaces with reliable backend architecture.
               </p>
             </div>
           </motion.div>

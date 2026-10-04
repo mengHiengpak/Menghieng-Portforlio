@@ -6,11 +6,11 @@ import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 function AdminLayout() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen ">
       <StarBg />
       <SmoothCursor />
       <Navbar />
-      <main className="pt-16 pb-20">
+      <main className="pt-16">
         <Outlet />
       </main>
       <UnderNavbar />

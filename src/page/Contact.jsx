@@ -34,8 +34,8 @@ function Contact() {
     ]
 
     return (
-        <section id="contact" className="relative min-h-screen overflow-hidden scroll-mt-16 bg-[#0b0d17]">
-            <div className="relative z-10 pt-24 pb-10 px-6 md:px-12 text-white">
+        <section id="contact" className=" min-h-screen scroll-mt-16 bg-[#0b0d17]">
+            <div className="relative z-10 pt-24 pb-28 px-6 md:px-12 text-white">
                 <h2 className="text-4xl md:pl-15 pl-1 pb-5">Contact Me</h2>
                 <p className="max-w-xl md:pl-15 pl-1 pb-10 text-gray-400">
                     Whether you have a project in mind, a job opportunity, or just want to connect

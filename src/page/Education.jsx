@@ -18,7 +18,7 @@ function Education() {
       <Timeline
         data={timelineItems}
         title="My Education"
-        subtitle="Over the last 4 years, I've grown my frontend and backend skills. Here's a timeline of my journey."
+        subtitle="Here is a timeline structured specifically for a 3rd-year university student, highlighting your academic progression alongside your hands-on full-stack development journey"
       />
     </section>
   );
