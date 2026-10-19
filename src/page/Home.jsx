@@ -74,11 +74,21 @@ function Home() {
         })
     }, [])
 
+    const [key, setKey] = useState(0)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setKey((prev) => prev + 1)
+        }, 6000)
+
+        return () => clearInterval(interval)
+    }, []);
+
 
     return (
         <div id="home" className='grid grid-cols-1 gap-1 md:grid-cols-2'>
             <div className='p-5 md:p-27 '>
-                <TypingAnimation className='text-3xl md:text-4xl'>{"Hi all i’m Pak Menghieng"}</TypingAnimation>
+                <TypingAnimation key={key} className='text-3xl md:text-4xl'>{"Hi all i’m Pak Menghieng"}</TypingAnimation>
                 <p ref={paraRef} className='pt-2 md:text-xl md:pt-3'>I'm a Computer Science student at AEU and a Silver Medalist at the World Vocational College Skills Competition (SEA). As a Full-Stack Developer, I specialize in React, Next.js, Node.js, and PostgreSQL to design and ship high-performance, scalable web applications.</p>
 
                 <div className='flex gap-4 pt-1'>
@@ -106,7 +116,13 @@ function Home() {
                         <ambientLight intensity={0.6} />
                         <directionalLight position={[5, 10, 5]} intensity={1} />
                         <ManTypingPc scale={0.4} position={[0, 0, 0]} />
-                        <OrbitControls enableRotate enablePan enableZoom={false} />
+                        <OrbitControls
+                            enableRotate
+                            enablePan
+                            enableZoom={false}
+                            minPolarAngle={Math.PI / 2 - 0.5}
+                            maxPolarAngle={Math.PI / 2 + 0.1}
+                        />
                     </Canvas>
                 </figure>
             </div>
